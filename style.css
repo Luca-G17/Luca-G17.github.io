@@ -73,7 +73,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-right: 10px;
-    max-width: 60em;
+    margin-top: 10px;
 }
 
 .entry-card .labels {
@@ -85,7 +85,9 @@ body {
 
 .entry-card .labels div {
     border-radius: 5px;
+    padding: 5px;
     background-color: #504b4b;
+    margin-right: 5px;
 }
 
 .card-element {
@@ -104,6 +106,7 @@ body {
     padding-right: 5px;
     min-width: 30em;
     position: relative;
+    max-width: 35em;
 }
 
 .content-card h3 {

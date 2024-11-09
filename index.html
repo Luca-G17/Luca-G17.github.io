@@ -25,7 +25,7 @@
     
   </head>
   
-  <body>   
+  <body>
     <div class="container">
         <div class="header">
             <div class="title-container">
@@ -152,23 +152,103 @@
                     </div>
                 <div class="content-card" id="Projects">
                     <h2>Projects</h2>
-                    <div class="content-container">
+                    <div class="content-container" style="flex-wrap: wrap;">
                         <div class="entry-card">
                             <div class="card-element text-content">
                                 <h3>LunaC Compiler</h3>
+                                A compiler for the game stationeers, translating from a subset of c89 to the in-game assembly language IC10 (based on MIPS). Including a lexer, parser, code generation and error synchronisation.
                                 <div class="labels">
                                     <div>Rust</div>
+                                    <div>C</div>
+                                    <div>GitHub Actions</div>
+                                    <div>Compiler Design</div>
                                 </div>
                             </div>
-                            <img class="card-element" src="./resources/images/BristolLogo.png">
+                            <img class="card-element" src="./resources/images/LunaC.png" style="background-color: black;">
+                        </div>
+                        <div class="entry-card">
+                            <div class="card-element text-content">
+                                <h3>Remote Boot System</h3>
+                                A TCP client server system for remotely booting a PC. An ESP32 bridges the power pins of the PC with a MOSFET triggered by the receipt of a TCP connection from a publicly accessible Raspberry PI (DDNS). 
+                                <div class="labels">
+                                    <div>ESP32</div>
+                                    <div>Raspberry Pi</div>
+                                    <div>C/C++</div>
+                                    <div>TCP Client/Server</div>
+                                </div>
+                            </div>
+                            <img class="card-element" src="./resources/images/RemoteBoot.png">
+                        </div>
+                        <div class="entry-card">
+                            <div class="card-element text-content">
+                                <h3>Path Tracer</h3>
+                                Parallelised path tracer for rendering synthetic scenes of primative geometries, includes importance sampling and bounding volume hierarchies for a 30% increase in performance.
+                                <div class="labels">
+                                    <div>Ray Tracing</div>
+                                    <div>Linear Algebra</div>
+                                    <div>JavaFX</div>
+                                </div>
+                            </div>
+                            <img class="card-element" src="./resources/images/PathTracer.png">
+                        </div>
+                        <div class="entry-card">
+                            <div class="card-element text-content">
+                                <h3>Dartboard Detector</h3>
+                                Dartboard detection algorithm written in python using OpenCV, including a custom implementation of a hough transform for circles and ellipses.
+                                <div class="labels">
+                                    <div>Computer Vision</div>
+                                    <div>Image Processing</div>
+                                    <div>OpenCV</div>
+                                </div>
+                            </div>
+                            <img class="card-element" src="./resources/images/DartboardDetector.jpg">
+                        </div>
+                        <div class="entry-card">
+                            <div class="card-element text-content">
+                                <h3>Coin Counter</h3>
+                                Coin counting algorithm written in python.
+                                <div class="labels">
+                                    <div>Computer Vision</div>
+                                    <div>Image Processing</div>
+                                    <div>OpenCV</div>
+                                </div>
+                            </div>
+                            <img class="card-element" src="./resources/images/CoinCounter.png">
+                        </div>
+                        <div class="entry-card">
+                            <div class="card-element text-content">
+                                <h3>Computer Graphics from First Principles</h3>
+                                This project documents my learning of computer graphics, starting from rasterizing triangles up to texture mapping, phong and guraud shading and dielectric materials. 
+                                <div class="labels">
+                                    <div>Computer Graphics</div>
+                                    <div>C++</div>
+                                    <div>SDL</div>
+                                </div>
+                            </div>
+                            <img class="card-element" src="./resources/images/ComputerGraphics.png" style="background-color: black;">
+                        </div>
+                        <div class="entry-card">
+                            <div class="card-element text-content">
+                                <h3>AquaNeRF</h3>
+                                This project is the result of my undergraduate disseration, investing 3D reconstruction of underwater scenes using Neural Radiance Fields. It was ultimately nominated for submission to the British Machine Vision Conference.
+
+                                <div class="labels">
+                                    <div>NeRF</div>
+                                    <div>Machine Learning</div>
+                                    <div>3D Reconstruction</div>
+                                    <div>NVS</div>
+                                </div>
+                            </div>
+                            <img class="card-element" src="./resources/images/AquaNeRF.png">
                         </div>
                     </div>
                 </div>
 
                 <div class="content-card" id="Contact">
                     <h2>Contact</h2>
-                    <div class="content-container">
-
+                    <div class="content-container" style="flex-direction: column;">
+                        <div>Email - lucagough7@gmail.com</div>
+                        <a href="https://www.linkedin.com/in/luca-gough-a28097233/">LinkedIn</a>
                     </div>
                 </div>
 
@@ -176,7 +256,7 @@
             </div> 
         </div>
         <div class="footer">
-            © 2024 My Website | All Rights Reserved
+            © 2024 Gianluca Gough | All Rights Reserved
         </div>
     </div>
 
