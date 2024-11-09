@@ -76,6 +76,18 @@ body {
     max-width: 60em;
 }
 
+.entry-card .labels {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+}
+
+.entry-card .labels div {
+    border-radius: 5px;
+    background-color: #504b4b;
+}
+
 .card-element {
     margin-left: 5px;
 }
@@ -83,7 +95,7 @@ body {
 .content-card img {
     border: 2px solid rgb(148, 148, 148);;
     padding: 5px;
-    height: 8em;
+    height: 11em;
     background-color: white;
 }
 
@@ -91,6 +103,7 @@ body {
     border-right: dotted black 2px;
     padding-right: 5px;
     min-width: 30em;
+    position: relative;
 }
 
 .content-card h3 {

@@ -18,8 +18,7 @@
      
     <link href="style.css" rel="stylesheet" type="text/css" />
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="script.js"></script>
 
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
@@ -34,23 +33,23 @@
                 <p>MSc. Artificial Intelligence @ University of St. Andrews</p>
             </div>
             <div class="button-container">
-                <button>
+                <button onclick="onClickInternalLink('Education')">
                     Education
                 </button>
-                <button>
+                <button onclick="onClickInternalLink('Experience')">
                     Experience
                 </button>
-                <button>
+                <button onclick="onClickInternalLink('Projects')">
                     Projects
                 </button>
-                <button>
+                <button onclick="onClickInternalLink('Contact')">
                     Contact
                 </button>
             </div>
         </div>
         <div class="content">
             <div class="inner">
-                <div class="content-card">
+                <div class="content-card" id="Education">
                     <h2>Education</h2>
                     <div class="content-container">
                         <div class="entry-card">
@@ -65,14 +64,14 @@
                                     <li>Advanced Networks and Communication Systems</li>
                                 </ul>
                             </div>
-                            <img class="card-element" src="./resources/images/StAndrewsLogo.png" style="height: 11em;">
+                            <img class="card-element" src="./resources/images/StAndrewsLogo.png">
                         </div>
 
                         <div class="entry-card">
                             <div class="card-element text-content">
                                 <h3>University of Bristol - [2021, 2024]</h3>
                                 <div>Course: BSc. Computer Science</div>
-                                <div>Grade: First Class</div>
+                                <div>Grade: First Class Honours</div>
                                 <div>Modules:</div>
                                 <ul>
                                     <li>High Performance Computing</li>
@@ -98,23 +97,79 @@
                                     <li>Physics - A*</li>
                                 </ul>
                             </div>
-                            <img class="card-element" src="./resources/images/PeterSymondsLogo.png" style="height: 11em;">
+                            <img class="card-element" src="./resources/images/PeterSymondsLogo.png">
 
                         </div>
                     </div>
                 </div>
 
-                <div class="content-card">
+                <div class="content-card" id="Experience">
                     <h2>Experience</h2>
+                    <div class="content-container">
+                        <div class="entry-card">
+                            <div class="card-element text-content">
+                                <h3>Datamine Software Ltd. - [July 2023, Sept. 2023]</h3>
+                                <div>Position: Software Engineer Intern</div>
+                                <div>Responsibilities:</div>
+                                <ul>
+                                    <li>Developing C++ code for industrial mining software</li>
+                                    <li>Built a set of 3D manipulation commands</li>
+                                    <li>Participated in an agile workflow (Jira, Code review (MS Azure), QA)</li>
+                                </ul>
+                            </div>
+                            <img class="card-element" src="./resources/images/DatamineLogo.png">
+                        </div>
+
+                        <div class="entry-card">
+                            <div class="card-element text-content">
+                                <h3>Smartlight.ai - [Sept. 2022, June 2023]</h3>
+                                <div>Position: Software Engineer</div>
+                                <div>Responsibilities:</div>
+                                <ul>
+                                    <li>Led a team of 4 student developers</li>
+                                    <li>Built a website for controlling/monitoring 30,000 AIoT devices</li>
+                                    <li>Set up an agile workflow with continuous integration and deployment using GitHub actions</li>
+                                    <li>Wrote a set of API endpoints for monitoring, scheduling and updating devices.</li>
+                                    <li>Developed a pipeline for synchronising the website, and its database, with data from AWS IoT Core.</li>
+                                </ul>
+                            </div>
+                            <img class="card-element" src="./resources/images/SmartlightLogo.jpeg">
+                        </div>
+ 
+                        <div class="entry-card">
+                            <div class="card-element text-content">
+                                <h3>University of Bristol - [July 2023, June 2023]</h3>
+                                <div>Position: Teaching Assistant</div>
+                                <div>Responsibilities:</div>
+                                <ul>
+                                    <li>Performed lab demonstrations to groups of 10-15 undergraduates</li>
+                                    <li>Taught object-oriented programming (Java)</li>
+                                    <li>Taught version control software (git)</li>
+                                </ul>
+                            </div>
+                            <img class="card-element" src="./resources/images/BristolLogo.png">
+                        </div>
+                    </div>
+                <div class="content-card" id="Projects">
+                    <h2>Projects</h2>
+                    <div class="content-container">
+                        <div class="entry-card">
+                            <div class="card-element text-content">
+                                <h3>LunaC Compiler</h3>
+                                <div class="labels">
+                                    <div>Rust</div>
+                                </div>
+                            </div>
+                            <img class="card-element" src="./resources/images/BristolLogo.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card" id="Contact">
+                    <h2>Contact</h2>
                     <div class="content-container">
 
                     </div>
-                <div class="content-card">
-                    <h2>Projects</h2>
-                </div>
-
-                <div class="content-card">
-                    <h2>Contact</h2>
                 </div>
 
 
@@ -127,7 +182,6 @@
 
     
     <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
     
   </body>
 </html>
