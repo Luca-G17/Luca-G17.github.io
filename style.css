@@ -16,14 +16,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
 }
 
 .content {
     flex: 1;
-    padding: 20px;
     color: white;
-    min-height: 60em;
 }
+
+.content .inner {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent footer background */
+    padding: 10px;
+    height: 75vh;
+    margin: 2em;
+    overflow-y: scroll;
+} 
 
 .header {
     flex: 0;
@@ -37,20 +44,77 @@ body {
 .header .title-container {
     border-right: 2px dotted rgb(148, 148, 148);
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 
 .header .button-container {
+    border-right: 2px dotted rgb(148, 148, 148);
+    padding-right: 10px;
+    padding-left: 10px;
     align-items: center;
     display: flex;
+}
+
+.content-card {
+    border-top: 3px dotted rgb(18, 129, 61);
+    padding-left: 1px;
+    margin: 3px;
+}
+
+.content-card h2 {
+    margin-bottom: 1px;
+}
+
+.entry-card {
+    background-color: rgba(54, 54, 54, 0.8); /* Semi-transparent footer background */
+    height: fit-content;
+    width: fit-content;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    max-width: 60em;
+}
+
+.card-element {
+    margin-left: 5px;
+}
+
+.content-card img {
+    border: 2px solid rgb(148, 148, 148);;
+    padding: 5px;
+    height: 8em;
+    background-color: white;
+}
+
+.content-card .text-content {
+    border-right: dotted black 2px;
+    padding-right: 5px;
+    min-width: 30em;
+}
+
+.content-card h3 {
+    margin-top: 0px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    border-left: 3px dotted rgb(148, 148, 148);
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow-x: scroll;
+    padding-bottom: 40px;
+    scroll-margin-left: 15px;
 }
 
 .header button {
     position: relative;
     margin-left:5px;
-    height: 95%;
+    height: 70%;
     border-radius: 0;
-    min-width: 5em;
+    min-width: 10em;
     background-color: rgb(54, 54, 54);
     border: 2px solid #504b4b;
     cursor: pointer;
@@ -58,7 +122,7 @@ body {
 }
 
 .header button:hover {
-    background: #5c5757;
+    background: #555555;
 }
 
 .footer {
