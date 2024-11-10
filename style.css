@@ -106,7 +106,7 @@ body {
     padding-right: 5px;
     min-width: 30em;
     position: relative;
-    max-width: 35em;
+    max-width: 30em;
 }
 
 .content-card h3 {
@@ -139,6 +139,36 @@ body {
 
 .header button:hover {
     background: #555555;
+}
+
+.contact-button {
+    border-radius: 0;
+    border: 0px solid #504b4b;
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+    color: white;
+    margin: 0px;
+}
+
+.contact-button img {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(54, 54, 54);
+    height: 4em;
+}
+
+.contact-button:hover > img,
+.contact-button:hover {
+    background: #555555;
+}
+
+#Projects .entry-card:hover {
+    cursor: pointer;
+}
+
+#Projects .entry-card:hover {
+    background-color: #555555;
 }
 
 .footer {
